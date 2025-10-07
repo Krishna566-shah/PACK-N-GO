@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dubai Travel Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+
+    header {
+      background: #b8860b;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .tags {
+      color:#b8860b;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    .line {
+      width: 50px;
+      height: 2px;
+      background: #b8860b;
+      margin: 10px auto;
+    }
+
+    .card p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background:#b8860b;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #9a1352;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+    <header>
+        <h1>Explore Dubai Blog</h1>
+        <p>🏖️ “Dubai – Desert Wonders, Modern Marvels”</p>
+        </header>
+
+  <div class="container">
+
+    <!-- Burj Khalifa -->
+    <div class="card">
+      <img src="Images/Burj Khalifa.png" alt="Burj Khalifa">
+      <div class="card-content">
+        <div class="tags">Dubai ♦ Landmark ♦ Tallest Building ♦ Skyline</div>
+        <h3>Burj Khalifa</h3>
+        <div class="line"></div>
+        <p>The world’s tallest building, Burj Khalifa offers breathtaking views from its observation decks and a dazzling fountain show at its base.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+    <!-- Dubai Mall -->
+    <div class="card">
+      <img src="Images/Dubai-Mall.webp" alt="Dubai Mall">
+      <div class="card-content">
+        <div class="tags">Dubai ♦ Shopping ♦ Luxury ♦ Entertainment</div>
+        <h3>The Dubai Mall</h3>
+        <div class="line"></div>
+        <p>The Dubai Mall is the largest shopping mall in the world, featuring 1,200 shops, an ice rink, aquarium, and endless entertainment options.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+    <!-- Palm Jumeirah -->
+    <div class="card">
+      <img src="Images/Palm-Jumerah.jpg" alt="Palm Jumeirah">
+      <div class="card-content">
+        <div class="tags">Dubai ♦ Island ♦ Luxury ♦ Resorts</div>
+        <h3>Palm Jumeirah</h3>
+        <div class="line"></div>
+        <p>A man-made island shaped like a palm tree, Palm Jumeirah is home to luxury resorts, beaches, and the famous Atlantis The Palm hotel.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+    <!-- Burj Al Arab -->
+    <div class="card">
+      <img src="Images/Burj-Al-Arab.webp" alt="Burj Al Arab">
+      <div class="card-content">
+        <div class="tags">Dubai ♦ Luxury ♦ Hotel ♦ Icon</div>
+        <h3>Burj Al Arab</h3>
+        <div class="line"></div>
+        <p>One of the most luxurious hotels in the world, Burj Al Arab is shaped like a sail and stands as a symbol of Dubai’s opulence.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+    <!-- Dubai Marina -->
+    <div class="card">
+      <img src="Images/Dubai Marina.jpg" alt="Dubai Marina">
+      <div class="card-content">
+        <div class="tags">Dubai ♦ Modern ♦ Skyscrapers ♦ Waterfront</div>
+        <h3>Dubai Marina</h3>
+        <div class="line"></div>
+        <p>Dubai Marina is a modern waterfront district filled with skyscrapers, yacht cruises, restaurants, and vibrant nightlife.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+    <!-- Desert Safari -->
+    <div class="card">
+      <img src="Images/Desert Safari.webp" alt="Dubai Desert Safari">
+      <div class="card-content">
+        <div class="tags">Dubai ♦ Adventure ♦ Desert ♦ Culture</div>
+        <h3>Desert Safari</h3>
+        <div class="line"></div>
+        <p>A must-do experience, Dubai Desert Safari includes dune bashing, camel rides, sandboarding, and traditional Bedouin-style dinners.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Explore Dubai Blog | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

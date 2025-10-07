@@ -1,0 +1,150 @@
+body { 
+  margin: 0; 
+  font-family: 'Quicksand', sans-serif; 
+  background: linear-gradient(to bottom, #F8F9FA, #E0F7FA); 
+  display: flex; 
+  flex-direction: row; 
+} 
+ 
+header { 
+  background: linear-gradient(to right, #FF7043, #FF8A65); 
+  color: white; 
+  padding: 30px 20px; 
+  text-align: center; 
+  width: 100%; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+ 
+} 
+ 
+header h1 { 
+  font-size: 2.5em; 
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); 
+} 
+ 
+aside { 
+  width: 220px; 
+  height: 100vh; 
+  background: #003049; 
+  color: white; 
+  padding: 25px 20px; 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.15); 
+} 
+ 
+aside h2 { 
+  color: #FFC107; 
+  margin-bottom: 20px; 
+  text-align: center; 
+} 
+ 
+aside a { 
+  display: block; 
+  color: #FFFDE7; 
+  text-decoration: none; 
+  margin: 12px 0; 
+  padding: 10px 15px; 
+  border-radius: 25px; 
+  background-color: #01497C; 
+  transition: all 0.3s ease-in-out; 
+ 
+  text-align: center; 
+  font-weight: bold; 
+} 
+ 
+aside a:hover { 
+  background: #FFD54F; 
+  color: #003049; 
+  transform: scale(1.05); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+} 
+ 
+.content { 
+  margin-left: 240px; 
+  padding: 30px 40px; 
+  flex: 1; 
+} 
+ 
+img { 
+  display: block; 
+  margin: 25px auto; 
+  border: 3px solid #B0BEC5; 
+  border-radius: 20px; 
+  width: 100%; 
+  max-width: 1200px; 
+  height: auto; 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+} 
+ 
+h2 { 
+  text-align: center; 
+  font-size: 1.8em; 
+  color: #37474F; 
+  margin-top: 20px; 
+} 
+ 
+ 
+p { 
+  font-size: 20px; 
+  line-height: 1.6; 
+  color: #455A64; 
+  text-align: center; 
+  margin-top: 30px; 
+} 
+ 
+mark { 
+  background-color: #FFF59D; 
+  padding: 0 6px; 
+  border-radius: 4px; 
+} 
+ 
+footer { 
+  background: linear-gradient(to right, #00695C, #00897B); 
+  padding: 20px; 
+  text-align: center; 
+  font-size: 14px; 
+  color: #FFF8E1; 
+  margin-top: 40px; 
+  border-top: 4px solid #B2DFDB; 
+} 
+ 
+footer p { 
+  color: #FFFDE7; 
+  margin: 5px 0; 
+} 
+ 
+footer a { 
+  text-decoration: none; 
+  color: #FFCCBC; 
+  margin: 0 10px; 
+  font-weight: bold; 
+} 
+ 
+footer a:hover { 
+  color: #FFD54F; 
+  text-decoration: underline; 
+} 
+ 
+@media (max-width: 768px) { 
+  aside { 
+    width: 100%; 
+    height: auto; 
+    position: relative; 
+    text-align: center; 
+  } 
+ 
+  .content { 
+    margin-left: 0; 
+    padding: 20px; 
+  } 
+ 
+  header h1 { 
+    font-size: 2em; 
+  } 
+ 
+  img { 
+    max-width: 100%; 
+    height: auto; 
+  } 
+} 

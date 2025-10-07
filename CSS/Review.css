@@ -1,0 +1,115 @@
+ body { 
+   margin: 0; 
+   font-family: 'Segoe UI', sans-serif; 
+   background-color: #F8F5E9; 
+   color: #3A7D44; 
+ } 
+ 
+ header { 
+   background-color: #DF6D14; 
+   color: white; 
+   padding: 40px 20px 20px; 
+   text-align: center; 
+   border-bottom: 6px solid #3A7D44; 
+ } 
+ 
+ header h1 { 
+   margin: 0; 
+   font-size: 2.5rem; 
+ } 
+ 
+ header p { 
+   margin-top: 10px; 
+   font-style: italic; 
+   font-size: 1.1rem; 
+ } 
+ 
+ nav { 
+   background-color: #3A7D44; 
+   padding: 12px; 
+   text-align: center; 
+ } 
+ 
+ 
+ nav a { 
+   color: white; 
+   text-decoration: none; 
+   margin: 0 10px; 
+   font-weight: 600; 
+ } 
+ 
+ nav a:hover { 
+   background-color: #9DC08B; 
+   color: #3A7D44; 
+   padding: 6px 10px; 
+   border-radius: 5px; 
+   transition: all 0.3s ease; 
+ } 
+ 
+ .form-container { 
+   max-width: 700px; 
+   margin: 50px auto; 
+   background-color: #9DC08B; 
+   padding: 40px 30px; 
+   border-radius: 15px; 
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+ } 
+ 
+ .form-container h2 { 
+   text-align: center; 
+   color: #3A7D44; 
+   font-size: 1.8rem; 
+   margin-bottom: 20px; 
+ } 
+ 
+ .form-container label { 
+   font-weight: bold; 
+ 
+   display: block; 
+   margin-top: 15px; 
+   margin-bottom: 5px; 
+ } 
+ 
+ .form-container input, 
+ .form-container textarea, 
+ .form-container select { 
+   width: 100%; 
+   padding: 12px; 
+   border: none; 
+   border-radius: 8px; 
+   font-size: 1rem; 
+   margin-bottom: 15px; 
+   background-color: #F8F5E9; 
+ } 
+ 
+ .form-container textarea { 
+   resize: vertical; 
+   height: 100px; 
+ } 
+ 
+ .form-container button { 
+   width: 100%; 
+   margin-top: 10px; 
+   padding: 14px; 
+   background-color: #3A7D44; 
+   color: white; 
+   border: none; 
+   border-radius: 8px; 
+   font-size: 1.1rem; 
+   cursor: pointer; 
+   font-weight: bold; 
+   transition: background-color 0.3s ease; 
+ 
+ } 
+ 
+ .form-container button:hover { 
+   background-color: #DF6D14; 
+   color: white; 
+ } 
+ 
+ footer { 
+   text-align: center; 
+   padding: 20px; 
+   font-size: 0.9rem; 
+   color: #777; 
+ } 

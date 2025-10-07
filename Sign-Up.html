@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<header> 
+<h1>Pack-N-GO</h1> 
+<head> 
+<meta charset="UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0" 
+/> 
+<link rel="stylesheet" href="css/sign-up.css"> 
+<title>Sign-Up | Pack-N-GO</title> 
+</head> 
+<body> 
+ 
+    <nav> 
+      <a href="index.html" target="_blank">Home</a> 
+      <a href="About_Us.html" target="_blank">About Us</a> 
+      <a href="Sign-Up.html" target="_blank">Sign Up</a> 
+      <a href="Flight.html" target="_blank">Flights</a> 
+      <a href="Train.html" target="_blank">Trains</a> 
+      <a href="Packages.html" target="_blank">Packages</a> 
+      <a href="Contact-us.html" target="_blank">Contact Us</a> 
+      <a href="gallery.html" target="_blank">Gallery</a> 
+      <a href="FAQ.html" target="_blank">FAQ</a> 
+      <a href="Review.html" target="_blank">Review</a> 
+    </nav> 
+  </header> 
+ 
+  <div class="form-container"> 
+    <h2>Sign Up</h2> 
+    <form action="PHP/Sign-Up.php" method="post"> 
+      <label for="username">Username:</label> 
+      <input type="text" id="username" name="username"> 
+ 
+      <label for="email">Email:</label> 
+      <input type="email" id="email" name="email"> 
+ 
+      <label for="password">Password:</label> 
+      <input type="password" id="password" name="password"> 
+ 
+      <button type="submit">Sign Up</button> 
+    </form> 
+  </div> 
+ 
+  <footer> 
+    <p><b>Contact Us:</b> support@packngo.com | +91-98765-43210</p> 
+    <p> 
+      <a href="#">Privacy Policy</a> | 
+ 
+      <a href="#">Terms of Service</a> | 
+      <a href="#">Help Center</a> 
+    </p> 
+    <p>&copy; 2025 <b><em><mark style="background-color:#FBE9E7;">Pack-N-GO</mark></em></b>. All rights reserved.</p> 
+  </footer> 
+  <div id="popupBox" class="popup"> 
+    <div class="popup-content"> 
+      <span id="closeBtn" class="close">&times;</span> 
+      <p id="popupMessage"></p> 
+    </div> 
+  </div> 
+  <script src="javascript/Sign-up.js"></script> 
+</body> 
+ 
+</html>

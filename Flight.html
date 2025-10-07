@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+  <meta charset="UTF-8" /> 
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1" 
+/> 
+  <link rel="stylesheet" href="CSS/Flight.css" /> 
+  <title>Book a Flight | Pack-N-GO</title> 
+</head> 
+ 
+<body> 
+ 
+  <header> 
+    <h1>Book a Flight – <i>Pack-N-GO</i></h1> 
+  </header> 
+ 
+  <nav> 
+    <a href="index.html" target="_blank">Home</a> | 
+    <a href="About_Us.html" target="_blank">About Us</a> | 
+    <a href="Sign-Up.html" target="_blank">Sign Up</a> | 
+    <a href="Flight.html" target="_blank">Flights</a> | 
+    <a href="Train.html" target="_blank">Trains</a> | 
+    <a href="Packages.html" target="_blank">Packages</a> | 
+    <a href="Contact-us.html" target="_blank">Contact Us</a> | 
+    <a href="gallery.html" target="_blank">Gallery</a> | 
+    <a href="FAQ.html" target="_blank">FAQ</a> | 
+    <a href="Review.html" target="_blank">Review</a> 
+  </nav> 
+ 
+  <div class="image-box"> 
+    <img src="Images/Flight.jpg" alt="Flight Image"> 
+  </div> 
+ 
+  <div class="form-container"> 
+    <h2>Flight Booking Form</h2> 
+    <form method="post"> 
+      <label for="from">From:</label> 
+      <input type="text" id="from" name="from" placeholder="Enter 
+departure city" required> 
+
+ 
+ 
+      <label for="to">To:</label> 
+      <input type="text" id="to" name="to" placeholder="Enter destination 
+city" required> 
+ 
+      <label for="date">Date:</label> 
+      <input type="date" id="date" name="date" required> 
+ 
+      <label for="time">Time:</label> 
+      <input type="time" id="time" name="time" required> 
+      <label for="airline">Airline:</label> 
+      <select id="airline" name="airline" required> 
+        <option value="AIR INDIA">Select an Airline</option> 
+        <option value="AIR INDIA">AIR INDIA</option> 
+        <option value="VISTARA">VISTARA</option> 
+        <option value="EMIRATES">EMIRATES</option> 
+        <option value="INDIGO">INDIGO</option> 
+      </select> 
+ 
+      <label for="class">Class:</label> 
+      <select id="class" name="class"> 
+        <option value="">Select a class</option> 
+        <option value="economy">Economy</option> 
+        <option value="business">Business</option> 
+        <option value="first">First Class</option> 
+      </select> 
+ 
+      <label for="passengers">Number of Passengers:</label> 
+      <input type="number" id="passengers" name="passengers" min="1" 
+max="10" required> 
+ 
+      <div class="form-buttons"> 
+        <input type="submit" value="Book Flight"> 
+        <input type="reset" value="Reset"> 
+
+ 
+      </div> 
+    </form> 
+  </div> 
+  <footer> 
+    <p><b>Contact Us:</b> support@packngo.com | +91-98765
+43210</p> 
+    <p> 
+      <a href="#">Privacy Policy</a> | 
+      <a href="#">Terms of Service</a> | 
+      <a href="#">Help Center</a> 
+    </p> 
+    <p>&copy; 2025 <b><em><mark style="background-color:#FBE9E7;">Pack-N-GO</mark></em></b>. All rights 
+reserved.</p> 
+  </footer> 
+</body> 
+ 
+</html> 

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaisalmer Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff8f0;
+      color: #333;
+    }
+
+    header {
+      background: #d97706;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 2px solid #eee;
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .tags {
+      color: #d97706;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    .line {
+      width: 50px;
+      height: 2px;
+      background: #d97706;
+      margin: 10px auto;
+    }
+
+    .card p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #d97706;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #b45309;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Jaisalmer Travel Blog</h1>
+    <p>🌟-Discover the Golden City of Rajasthan</p>
+  </header>
+
+  <div class="container">
+    <!-- Jaisalmer Fort -->
+    <div class="card">
+      <img src="Images/Jaisalmer-Fort.jpg" alt="Jaisalmer Fort">
+      <div class="card-content">
+        <div class="tags">Jaisalmer ♦ Heritage ♦ Fort</div>
+        <h3>Jaisalmer Fort</h3>
+        <div class="line"></div>
+        <p>One of the largest living forts in the world, Jaisalmer Fort is also known as Sonar Quila or Golden Fort for its yellow sandstone beauty.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+    <!-- Patwon Ki Haveli -->
+    <div class="card">
+      <img src="Images/patwaon-Ki-Haveli.jpeg" alt="Patwon Ki Haveli">
+      <div class="card-content">
+        <div class="tags">Jaisalmer ♦ Architecture ♦ Haveli</div>
+        <h3>Patwon Ki Haveli</h3>
+        <div class="line"></div>
+        <p>A collection of five havelis with intricate carvings, showcasing the grandeur of Jaisalmer’s rich past.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+    <!-- Sam Sand Dunes -->
+    <div class="card">
+      <img src="Images/Sam-sand-Dunes.jpg" alt="Sam Sand Dunes">
+      <div class="card-content">
+        <div class="tags">Jaisalmer ♦ Desert ♦ Adventure</div>
+        <h3>Sam Sand Dunes</h3>
+        <div class="line"></div>
+        <p>Experience camel rides, jeep safaris, and cultural performances in the golden Thar Desert at Sam Sand Dunes.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+    <!-- Gadisar Lake -->
+    <div class="card">
+      <img src="Images/Jaisalmer-Hero (2).jpg" alt="Gadisar Lake">
+      <div class="card-content">
+        <div class="tags">Jaisalmer ♦ Lake ♦ Scenic</div>
+        <h3>Gadisar Lake</h3>
+        <div class="line"></div>
+        <p>A beautiful artificial lake surrounded by temples and ghats, perfect for boat rides and photography.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+    <!-- Nathmal Ki Haveli -->
+    <div class="card">
+      <img src="Images/Nathmal-Ki-Haveli.jpeg" alt="Nathmal Ki Haveli">
+      <div class="card-content">
+        <div class="tags">Jaisalmer ♦ Heritage ♦ Architecture</div>
+        <h3>Nathmal Ki Haveli</h3>
+        <div class="line"></div>
+        <p>A stunning haveli with unique architecture built by two architect brothers, known for its artistic designs.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+    <!-- Desert Safari -->
+    <div class="card">
+      <img src="Images/Desert-Safari-J.webp" alt="Desert Safari Jaisalmer">
+      <div class="card-content">
+        <div class="tags">Jaisalmer ♦ Adventure ♦ Desert</div>
+        <h3>Desert Safari</h3>
+        <div class="line"></div>
+        <p>An unforgettable desert safari with Rajasthani folk music, dance, and a night under the stars in desert camps.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+  </div>
+
+   <footer>
+    <p>© 2025 Explore <strong>Jaisalmer</strong> Blog | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

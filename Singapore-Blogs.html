@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Singapore Travel Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+
+    header {
+      background: #009688;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .tags {
+      color: #009688;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    .line {
+      width: 50px;
+      height: 2px;
+      background: #009688;
+      margin: 10px auto;
+    }
+
+    .card p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #009688;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #00796b;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Explore Singapore Blog</h1>
+    <p>🦁 “Singapore – The Lion City Awaits You”</p>
+    </header>
+
+  <div class="container">
+
+    <!-- Marina Bay Sands -->
+    <div class="card">
+      <img src="Images/Marina Bay Sands.jpg" alt="Marina Bay Sands">
+      <div class="card-content">
+        <div class="tags">Singapore ♦ Landmark ♦ Luxury ♦ Skyline</div>
+        <h3>Marina Bay Sands</h3>
+        <div class="line"></div>
+        <p>One of Singapore’s most iconic landmarks, Marina Bay Sands offers luxury, a rooftop infinity pool, shopping, and breathtaking city views.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+    <!-- Gardens by the Bay -->
+    <div class="card">
+      <img src="Images/Gardens by the Bay.avif" alt="Gardens by the Bay">
+      <div class="card-content">
+        <div class="tags">Singapore ♦ Gardens ♦ Nature ♦ Modern</div>
+        <h3>Gardens by the Bay</h3>
+        <div class="line"></div>
+        <p>Featuring futuristic Supertree structures and biodomes, Gardens by the Bay is a must-visit attraction showcasing modern nature design.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+    <!-- Sentosa Island -->
+    <div class="card">
+      <img src="Images/Sentosa Island.jpg" alt="Sentosa Island">
+      <div class="card-content">
+        <div class="tags">Singapore ♦ Sentosa ♦ Beach ♦ Resorts</div>
+        <h3>Sentosa Island</h3>
+        <div class="line"></div>
+        <p>A resort island with beaches, luxury hotels, adventure parks, and attractions – Sentosa is Singapore’s top destination for fun and relaxation.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+    <!-- Universal Studios -->
+    <div class="card">
+      <img src="Images/Universal Studios Singapore.jpeg" alt="Universal Studios Singapore">
+      <div class="card-content">
+        <div class="tags">Singapore ♦ Sentosa ♦ Theme Park ♦ Adventure</div>
+        <h3>Universal Studios Singapore</h3>
+        <div class="line"></div>
+        <p>Universal Studios Singapore is a family-friendly theme park with thrilling rides, movie-themed attractions, and entertainment shows.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+    <!-- Merlion Park -->
+    <div class="card">
+      <img src="Images/Merlion Park.avif" alt="Merlion Park">
+      <div class="card-content">
+        <div class="tags">Singapore ♦ Marina Bay ♦ Landmark ♦ Icon</div>
+        <h3>Merlion Park</h3>
+        <div class="line"></div>
+        <p>Merlion Park is home to the famous Merlion statue – the national icon of Singapore, offering great photo spots with the city backdrop.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+    <!-- Singapore Zoo -->
+    <div class="card">
+      <img src="Images/Singapore Zoo & Night Safari.jpeg" alt="Singapore Zoo">
+      <div class="card-content">
+        <div class="tags">Singapore ♦ Wildlife ♦ Zoo ♦ Safari</div>
+        <h3>Singapore Zoo & Night Safari</h3>
+        <div class="line"></div>
+        <p>Famous worldwide, Singapore Zoo and the Night Safari offer an immersive wildlife experience where animals roam in natural habitats.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Explore Singapore Blog | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

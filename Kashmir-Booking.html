@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Kashmir</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+    }
+    header {
+        background: rgba(0,0,0,0.4);
+        position: fixed;
+        width: 100%;
+        padding: 15px 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index:10;
+    }
+    header h1 {
+        color: #5ca37c;
+        font-size: 50px;
+    }
+    nav a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    .hero {
+        background: url('Images/Jammu.avif') no-repeat center center/cover;
+        height: 80vh;
+        width: 2150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+    .hero-content {
+        background: rgba(255,255,255,0.9);
+        color: black;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 800px;
+        width: 90%;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .hero-content h2 {
+        color: #2d5e4d;
+        margin-bottom: 10px;
+    }
+    .booking-bar {
+        display: flex;
+        flex-wrap: wrap;
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        margin-top: 20px;
+    }
+    .booking-bar div {
+        flex: 1;
+        min-width: 150px;
+        margin: 5px;
+    }
+    .booking-bar input, .booking-bar select {
+        width: 160px;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    .booking-bar button {
+        background: #2d5e4d;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .why-choose {
+        padding: 50px;
+        text-align: center;
+    }
+    .features {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .feature {
+        max-width: 250px;
+        text-align: center;
+    }
+    .feature img {
+        width: 120px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+    .featured-news {
+        padding: 50px;
+        background: #f8f8f8;
+    }
+    .news-cards {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .news-card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 300px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .news-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+    .news-card .content {
+        padding: 15px;
+    }
+    .testimonials {
+        padding: 50px;
+        background: #e3f5ec;
+        text-align: center;
+    }
+    .testimonial-cards {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .testimonial {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 250px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .testimonial img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    footer {
+        background: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>KASHMIR</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Destination</a>
+        <a href="Jammu&Kahmir-Blogs.html">Blog</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>"Kashmir – Paradise on Earth" 🌸🏔️</h2>
+        <p>Experience snow-capped peaks, tulip gardens, and serene lakes.</p>
+        <div class="booking-bar">
+            <div><select>
+                <option>PACKAGES</option>
+                <option>Srinagar Houseboat Stay</option>
+                <option>Gulmarg Ski Adventure</option>
+                <option>Pahalgam Nature Retreat</option>
+                <option>Sonamarg Glacier Trek</option>
+            </select></div>
+            <div><input type="date"></div>
+            <div><input type="date"></div>
+            <div><input type="number" placeholder="Guests"></div>
+            <div><button>BOOK</button></div>
+        </div>
+    </div>
+</section>
+
+<section class="why-choose">
+    <h2>WHY CHOOSE US?</h2>
+    <div class="features">
+        <div class="feature">
+            <img src="Images/Valley-Packages.webp" alt="Best Deals">
+            <h3>Exclusive Valley Packages</h3>
+            <p>Tailored stays from Dal Lake to Gulmarg slopes.</p>
+        </div>
+        <div class="feature">
+            <img src="Images/Secure-Booking.png" alt="Secure Booking">
+            <h3>Secure Booking</h3>
+            <p>Plan your dream trip with confidence.</p>
+        </div>
+        <div class="feature">
+            <img src="Images/Kashmir-Experience.jpeg" alt="Experience">
+            <h3>Unmatched Experiences</h3>
+            <p>Shikara rides, Mughal gardens, and mountain adventures.</p>
+        </div>
+    </div>
+</section>
+
+<section class="featured-news">
+    <h2 style="text-align:center;">Feature News</h2>
+    <div class="news-cards">
+        <div class="news-card">
+            <img src="Images/Dal-Lake.avif" alt="Dal Lake">
+            <div class="content">
+                <h4>Dal Lake</h4>
+                <p>Glide on a shikara with views of the Himalayas.</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="Images/Gulmarg.jpeg" alt="Gulmarg">
+            <div class="content">
+                <h4>Gulmarg</h4>
+                <p>Experience skiing and gondola rides above snowy slopes.</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="Images/Pahalgam.jpg" alt="Pahalgam">
+            <div class="content">
+                <h4>Pahalgam</h4>
+                <p>Walk amidst pine forests and riverside meadows.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial-cards">
+        <div class="testimonial">
+            <img src="Images/k1.webp" alt="Riya">
+            <p>"The houseboat stay on Dal Lake was magical."</p>
+            <strong>- Riya</strong>
+        </div>
+        <div class="testimonial">
+            <img src="Images/k2.jpg" alt="Ayaan">
+            <p>"Gulmarg’s cable car gave us breathtaking views."</p>
+            <strong>- Ayaan</strong>
+        </div>
+        <div class="testimonial">
+            <img src="Images/k3.jpg" alt="Jannie">
+            <p>"Kashmir truly lives up to its title – Paradise on Earth."</p>
+            <strong>- Jannie</strong>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Explore Kashmir. All Rights Reserved.
+</footer>
+
+</body>
+</html>

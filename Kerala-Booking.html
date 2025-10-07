@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Kerala</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+    }
+    header {
+        background: rgba(0,0,0,0.4);
+        position: fixed;
+        width: 100%;
+        padding: 15px 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index:10;
+    }
+    header h1 {
+        color: #07582a;
+        background: white;
+        font-size: 50px;
+    }
+    nav a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    .hero {
+        background: url('Images/Kerala.avif') no-repeat center center/cover;
+        height: 80vh;
+        width: 2150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+    .hero-content {
+        background: rgba(255,255,255,0.9);
+        color: black;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 800px;
+        width: 90%;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .hero-content h2 {
+        color: #2e8b57;
+        margin-bottom: 10px;
+    }
+    .booking-bar {
+        display: flex;
+        flex-wrap: wrap;
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        margin-top: 20px;
+    }
+    .booking-bar div {
+        flex: 1;
+        min-width: 150px;
+        margin: 5px;
+    }
+    .booking-bar input, .booking-bar select {
+        width: 160px;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    .booking-bar button {
+        background: #2e8b57;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .why-choose {
+        padding: 50px;
+        text-align: center;
+    }
+    .features {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .feature {
+        max-width: 250px;
+        text-align: center;
+    }
+    .feature img {
+        width: 120px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+    .featured-news {
+        padding: 50px;
+        background: #f8f8f8;
+    }
+    .news-cards {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .news-card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 300px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .news-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+    .news-card .content {
+        padding: 15px;
+    }
+    .testimonials {
+        padding: 50px;
+        background: #f0fff0;
+        text-align: center;
+    }
+    .testimonial-cards {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .testimonial {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 250px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .testimonial img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    footer {
+        background: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>KERALA</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Destination</a>
+        <a href="Kerala-Blogs.html" target="_blank">Blog</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>"Kerala – God’s Own Country" 🌴⛵</h2>
+        <p>From serene backwaters to lush tea plantations, experience the magic of Kerala.</p>
+        <div class="booking-bar">
+            <div><select>
+                <option>PACKAGES</option>
+                <option>Alleppey Backwater Cruise</option>
+                <option>Munnar Tea Estate Tour</option>
+                <option>Kovalam Beach Getaway</option>
+                <option>Thekkady Wildlife Safari</option>
+            </select></div>
+            <div><input type="date"></div>
+            <div><input type="date"></div>
+            <div><input type="number" placeholder="Guests"></div>
+            <div><button>BOOK</button></div>
+        </div>
+    </div>
+</section>
+
+<section class="why-choose">
+    <h2>WHY CHOOSE US?</h2>
+    <div class="features">
+        <div class="feature">
+            <img src="Images/Kerala-Scenic-gateway.png" alt="Best Deals">
+            <h3>Scenic Getaways</h3>
+            <p>Carefully curated tours across Kerala’s stunning landscapes.</p>
+        </div>
+        <div class="feature">
+            <img src="Images/Secure-Booking.png" alt="Secure Booking">
+            <h3>Secure Booking</h3>
+            <p>Plan your trip with confidence and ease.</p>
+        </div>
+        <div class="feature">
+            <img src="Images/Kerala-Experience.png" alt="Experience">
+            <h3>Authentic Experiences</h3>
+            <p>Backwater cruises, spice plantations, and cultural shows.</p>
+        </div>
+    </div>
+</section>
+
+<section class="featured-news">
+    <h2 style="text-align:center;">Feature News</h2>
+    <div class="news-cards">
+        <div class="news-card">
+            <img src="Images/Alleppey-Backwaters.avif" alt="Alleppey-Backwaters">
+            <div class="content">
+                <h4>Alleppey Backwaters</h4>
+                <p>Drift through tranquil waters on traditional houseboats.</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="Images/Munnar.avif" alt="Munnar">
+            <div class="content">
+                <h4>Munnar</h4>
+                <p>Wander among emerald-green tea plantations and rolling hills.</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="Images/Kovalam.avif" alt="Kovalam">
+            <div class="content">
+                <h4>Kovalam Beach</h4>
+                <p>Relax on golden sands and enjoy Arabian Sea sunsets.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial-cards">
+        <div class="testimonial">
+            <img src="Images/KE1.jpeg" alt="Meera">
+            <p>"The houseboat stay in Alleppey was unforgettable."</p>
+            <strong>- Meera</strong>
+        </div>
+        <div class="testimonial">
+            <img src="Images/KE2.jpeg" alt="Arjuna">
+            <p>"Munnar’s tea gardens are a sight to behold."</p>
+            <strong>- Arjuna</strong>
+        </div>
+        <div class="testimonial">
+            <img src="Images/KE3.jpeg" alt="Elena">
+            <p>"Loved the cultural performances in Kochi."</p>
+            <strong>- Elena</strong>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Explore Kerala. All Rights Reserved.
+</footer>
+
+</body>
+</html>

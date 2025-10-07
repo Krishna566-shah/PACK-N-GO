@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Jaisalmer</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+    }
+  
+    header {
+        background: rgba(0,0,0,0.4);
+        position: fixed;
+        width: 100%;
+        padding: 15px 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index:10;
+    }
+    header h1 {
+        color: #d4a373;
+        font-size: 50px;
+    }
+    nav a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    /* Hero Section */
+    .hero {
+        background: url('Images/Jaisalmer-Hero\ \(2\).jpg') no-repeat center center/cover;
+        background-size:cover;
+        height: 80vh;
+        /* width:2000px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+    .hero-content {
+        background: rgba(255,255,255,0.9);
+        color: black;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 800px;
+        width: 90%;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .hero-content h2 {
+        color: #c07a2c;
+        margin-bottom: 10px;
+    }
+    .booking-bar {
+        display: flex;
+        flex-wrap: wrap;
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        margin-top: 20px;
+    }
+    .booking-bar div {
+        flex: 1;
+        min-width: 150px;
+        margin: 5px;
+    }
+    .booking-bar input, .booking-bar select {
+        width: 160px;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    .booking-bar button {
+        background: #c07a2c;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    /* Why Choose Us */
+    .why-choose {
+        padding: 50px;
+        text-align: center;
+    }
+    .why-choose h2 {
+        margin-bottom: 30px;
+    }
+    .features {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .feature {
+        max-width: 250px;
+        text-align: center;
+    }
+    .feature img {
+        width: 120px;
+        height:80px;
+        margin-bottom: 10px;
+    }
+    /* Featured News */
+    .featured-news {
+        padding: 50px;
+        background: #f8f8f8;
+    }
+    .news-cards {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .news-card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 300px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .news-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+    .news-card .content {
+        padding: 15px;
+    }
+    /* Testimonials */
+    .testimonials {
+        padding: 50px;
+        background: #fff3e0;
+        text-align: center;
+    }
+    .testimonial-cards {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .testimonial {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 250px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .testimonial img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    /* Footer */
+    footer {
+        background: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>JAISALMER</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Destination</a>
+        <a href="Jaisalmer-blogs.html">Blog</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>"Jaisalmer – The Golden City of Rajasthan." 🏰🌅</h2>
+        <p>Step into a world of golden sands, majestic forts, and timeless culture.</p>
+        <div class="booking-bar">
+            <div><select>
+                <option>PACKAGES</option>
+                <option>Desert Safari Adventure</option>
+                <option>Jaisalmer Heritage Tour</option>
+                <option>Sam Sand Dunes Camping</option>
+                <option>Budget Jaisalmer Trip</option>
+            </select></div>
+            <div><input type="date"></div>
+            <div><input type="date"></div>
+            <div><input type="number" placeholder="Guests"></div>
+            <div><button>BOOK</button></div>
+        </div>
+    </div>
+</section>
+
+<section class="why-choose">
+    <h2>WHY CHOOSE US?</h2>
+    <div class="features">
+        <div class="feature">
+            <img src="Images/Desert-J.webp" alt="Best Deals">
+            <h3>Exclusive Desert Offers</h3>
+            <p>Get unbeatable deals for camel rides and desert camps.</p>
+        </div>
+        <div class="feature">
+            <img src="Images/Secure-Booking.png" alt="Secure Booking">
+            <h3>Secure Booking</h3>
+            <p>Book your golden city adventure with ease and trust.</p>
+        </div>
+        <div class="feature">
+            <img src="Images/Jaisalmer-Experience.png" alt="Experience">
+            <h3>Unforgettable Experiences</h3>
+            <p>From forts to sand dunes, discover Jaisalmer like never before.</p>
+        </div>
+    </div>
+</section>
+
+<section class="featured-news">
+    <h2 style="text-align:center;">Feature News</h2>
+    <div class="news-cards">
+        <div class="news-card">
+            <img src="Images/Jaisalmer-Fort.jpg" alt="Fort Jaisalmer">
+            <div class="content">
+                <h4>Jaisalmer Fort</h4>
+                <p>Explore the living fort, home to history, culture, and golden walls.</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="Images/Sam-sand-Dunes.jpg" alt="Sam sand Dunes">
+            <div class="content">
+                <h4>Sam Sand Dunes</h4>
+                <p>Experience the magical sunsets and camel safaris of the Thar Desert.</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="Images/patwaon-Ki-Haveli.jpeg" alt="patwaon-Ki-Haveli">
+            <div class="content">
+                <h4>Patwon Ki Haveli</h4>
+                <p>Marvel at intricate carvings and Rajasthani architecture.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial-cards">
+        <div class="testimonial">
+            <img src="Images/J1.jpeg" alt="Priya">
+            <p>"The desert safari was unforgettable – pure magic!"</p>
+            <strong>- Priya</strong>
+        </div>
+        <div class="testimonial">
+            <img src="Images/J2.jpeg" alt="Rajesh">
+            <p>"Loved the golden architecture and cultural vibes."</p>
+            <strong>- Rajesh</strong>
+        </div>
+        <div class="testimonial">
+            <img src="Images/J3.jpeg" alt="Emily">
+            <p>"A photographer’s paradise – every view was stunning."</p>
+            <strong>- Emily</strong>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Explore Jaisalmer. All Rights Reserved.
+</footer>
+
+</body>
+</html>

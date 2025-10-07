@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Bali</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+    }
+  
+    header {
+        background: rgba(0,0,0,0.4);
+        position: fixed;
+        width: 100%;
+        padding: 15px 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index:10;
+    }
+    header h1 {
+        color: #ffb347;
+        font-size: 50px;
+    }
+    nav a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    /* Hero Section */
+    .hero {
+        background: url('Images/Bali.jpg') no-repeat center center/cover;
+        background-size:cover;
+        height: 80vh;
+        width:2150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+    .hero-content {
+        background: rgba(255,255,255,0.9);
+        color: black;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 800px;
+        width: 90%;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .hero-content h2 {
+        color: #ff7f50;
+        margin-bottom: 10px;
+    }
+    .booking-bar {
+        display: flex;
+        flex-wrap: wrap;
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        margin-top: 20px;
+    }
+    .booking-bar div {
+        flex: 1;
+        min-width: 150px;
+        margin: 5px;
+    }
+    .booking-bar input, .booking-bar select {
+        width: 160px;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    .booking-bar button {
+        background: #ff7f50;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    /* Why Choose Us */
+    .why-choose {
+        padding: 50px;
+        text-align: center;
+    }
+    .why-choose h2 {
+        margin-bottom: 30px;
+    }
+    .features {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .feature {
+        max-width: 250px;
+        text-align: center;
+    }
+    .feature img {
+        width: 120px;
+        height:80px;
+        margin-bottom: 10px;
+    }
+    /* Featured News */
+    .featured-news {
+        padding: 50px;
+        background: #f8f8f8;
+    }
+    .news-cards {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .news-card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 300px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .news-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+    .news-card .content {
+        padding: 15px;
+    }
+    /* Testimonials */
+    .testimonials {
+        padding: 50px;
+        background: #fff3e0;
+        text-align: center;
+    }
+    .testimonial-cards {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .testimonial {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 250px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .testimonial img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    /* Footer */
+    footer {
+        background: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    /* Responsive Design */
+@media (max-width: 768px) {
+    header h1 { 
+        font-size: 2em; 
+    }
+    nav a { 
+        font-size: 14px; 
+        margin-left: 10px; 
+    }
+
+    /* Hero Section */
+    .hero { 
+        height: 50vh;           /* shorter height for mobile */
+        background-size: cover; /* keep image covering the area */
+        background-position: center center; /* center image */
+    }
+
+    .hero-content { 
+        width: 95%; 
+        padding: 15px; 
+    }
+
+    .booking-bar { 
+        flex-direction: column; /* stack booking inputs vertically */
+        align-items: center;
+    }
+
+    .booking-bar input, .booking-bar select, .booking-bar button { 
+        width: 100%;           /* full width on mobile */
+        margin-bottom: 10px;   /* spacing between inputs */
+    }
+
+    .features, .news-cards, .testimonial-cards { 
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .feature, .news-card, .testimonial { 
+        max-width: 90%; 
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>BALI</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Destination</a>
+        <a href="Bali-Blogs.html">Blog</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>"Bali – Where Paradise Meets Serenity." 🏝️</h2>
+        <p>Escape to Bali’s breathtaking beaches and lush landscapes</p>
+        <div class="booking-bar">
+            <div><select>
+                <option>PACKAGES</option>
+                <option>Beach Bliss Bali</option>
+                <option>Cultural Bali</option>
+                <option>Luxury Bali Retreat</option>
+                <option>Budget Bali Getaway</option>
+            </select></div>
+            <div><input type="date"></div>
+            <div><input type="date"></div>
+            <div><input type="number" placeholder="Guests"></div>
+            <div><button>BOOK</button></div>
+        </div>
+    </div>
+</section>
+
+<section class="why-choose">
+    <h2>WHY CHOOSE US?</h2>
+    <div class="features">
+        <div class="feature">
+            <img src="Images/Bali-Offer.webp" alt="Best Deals" >
+            <h3>Best Beach Deals</h3>
+            <p>Exclusive offers for Bali’s most stunning resorts.</p>
+        </div>
+        <div class="feature">
+            <img src="Images/Secure-Booking.png" alt="Secure Booking">
+            <h3>Secure Booking</h3>
+            <p>Book your Bali holiday with ease and trust.</p>
+        </div>
+        <div class="feature">
+            <img src="Images/Bali-Adventure.png" alt="Experience">
+            <h3>Memorable Adventures</h3>
+            <p>From surfing to temples, your journey will be magical.</p>
+        </div>
+    </div>
+</section>
+
+<section class="featured-news">
+    <h2 style="text-align:center;">Feature News</h2>
+    <div class="news-cards">
+        <div class="news-card">
+            <img src="Images/Bali-Beach.avif" alt="Bali-Beach">
+            <div class="content">
+                <h4>Top Bali Beaches</h4>
+                <p>Relax at Kuta, Seminyak, and other breathtaking shores.</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="Images/Bali.avif" alt="Bali-Temple">
+            <div class="content">
+                <h4>Temple Trails</h4>
+                <p>Discover Bali’s rich culture through its sacred temples.</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="Images/Bali-Villa.avif" alt="Bali-Villa">
+            <div class="content">
+                <h4>Luxury Villas</h4>
+                <p>Stay in private villas surrounded by tropical beauty.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial-cards">
+        <div class="testimonial">
+            <img src="Images/B1.jpg" alt="">
+            <p>"Bali was pure paradise. The beaches were stunning!"</p>
+            <strong>- Emma</strong>
+        </div>
+        <div class="testimonial">
+            <img src="Images/B2.jpeg" alt="">
+            <p>"The cultural experience in Bali was unforgettable."</p>
+            <strong>- Liam</strong>
+        </div>
+        <div class="testimonial">
+            <img src="Images/B3.webp" alt="">
+            <p>"Our villa stay was beyond amazing – will come again!"</p>
+            <strong>- Sophia</strong>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Explore Bali. All Rights Reserved.
+</footer>
+
+</body>
+</html>

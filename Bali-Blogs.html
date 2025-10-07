@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bali Travel Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+
+    header {
+      background: #e67e22;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .tags {
+      color: #e67e22;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    .line {
+      width: 50px;
+      height: 2px;
+      background: #e67e22;
+      margin: 10px auto;
+    }
+
+    .card p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #e67e22;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #cf6413;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Explore Bali – Famous Places & Travel Blog</h1>
+  </header>
+
+  <div class="container">
+
+    <!-- Ubud Monkey Forest -->
+    <div class="card">
+      <img src="Images/ubud-forest.jpg" alt="Ubud Monkey Forest">
+      <div class="card-content">
+        <div class="tags">Bali ♦ Ubud ♦ Nature ♦ Culture</div>
+        <h3>Ubud Monkey Forest</h3>
+        <div class="line"></div>
+        <p>A sanctuary and temple complex where you can walk among playful monkeys while exploring sacred Balinese Hindu temples.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+    <!-- Tanah Lot Temple -->
+    <div class="card">
+      <img src="Images/Tanah-Lot-temple.jpg" alt="Tanah Lot Temple">
+      <div class="card-content">
+        <div class="tags">Bali ♦ Tabanan ♦ Temple ♦ Sunset</div>
+        <h3>Tanah Lot Temple</h3>
+        <div class="line"></div>
+        <p>One of Bali’s most iconic sea temples, Tanah Lot is perched on a rock in the ocean, best visited at sunset for stunning views.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+    <!-- Tegallalang Rice Terraces -->
+    <div class="card">
+      <img src="Images/Tegallalang Rice Terraces.jpg" alt="Tegallalang Rice Terraces">
+      <div class="card-content">
+        <div class="tags">Bali ♦ Ubud ♦ Nature ♦ Landscape</div>
+        <h3>Tegallalang Rice Terraces</h3>
+        <div class="line"></div>
+        <p>Famous for its beautiful terraced rice fields, Tegallalang offers a perfect Instagram-worthy spot surrounded by lush greenery.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+    <!-- Mount Batur -->
+    <div class="card">
+      <img src="Images/Mount batur.jpg" alt="Mount Batur">
+      <div class="card-content">
+        <div class="tags">Bali ♦ Kintamani ♦ Hiking ♦ Adventure</div>
+        <h3>Mount Batur</h3>
+        <div class="line"></div>
+        <p>Hike Mount Batur at dawn to witness a magical sunrise with panoramic views of the volcanic landscape and Lake Batur.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+    <!-- Uluwatu Temple -->
+    <div class="card">
+      <img src="Images/Ulluwatu temple.jpg" alt="Uluwatu Temple">
+      <div class="card-content">
+        <div class="tags">Bali ♦ South Bali ♦ Temple ♦ Culture</div>
+        <h3>Uluwatu Temple</h3>
+        <div class="line"></div>
+        <p>Perched on a clifftop, Uluwatu Temple is famous for breathtaking ocean views and its traditional Kecak fire dance performance.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+    <!-- Seminyak Beach -->
+    <div class="card">
+      <img src="Images/Bali-Beach.avif" alt="Seminyak Beach">
+      <div class="card-content">
+        <div class="tags">Bali ♦ Seminyak ♦ Beach ♦ Nightlife</div>
+        <h3>Seminyak Beach</h3>
+        <div class="line"></div>
+        <p>Seminyak Beach is a stylish coastal area with beach clubs, luxury resorts, shopping, and one of the best sunset views in Bali.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Explore Bali Blog | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

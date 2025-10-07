@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaipur & Jodhpur Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+    header {
+      background:  #c0392b;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 2px solid #eee;
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .tags {
+      color: #c0392b;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    .line {
+      width: 50px;
+      height: 2px;
+      background: #c0392b;
+      margin: 10px auto;
+    }
+
+    .card p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #c0392b;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #962d22;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <h1>Explore Jaipur & Jodhpur Blog</h1>
+        <p>🏰 “Discover the Royal Heritage of Rajasthan”</p>
+        </header>
+
+  <div class="container">
+
+    <!-- Jaipur Places -->
+    <div class="card">
+      <img src="Images/Amber-Fort.avif" alt="Amber Fort">
+      <div class="card-content">
+        <div class="tags">Jaipur ♦ History ♦ Architecture</div>
+        <h3>Amber Fort</h3>
+        <div class="line"></div>
+        <p>A majestic fort with intricate architecture and panoramic views, Amber Fort is a must-visit in Jaipur.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Images/Hawamahal.avif" alt="Hawa Mahal">
+      <div class="card-content">
+        <div class="tags">Jaipur ♦ Palace ♦ Culture</div>
+        <h3>Hawa Mahal</h3>
+        <div class="line"></div>
+        <p>Known as the "Palace of Winds," this five-story structure is one of Jaipur’s most iconic landmarks.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Images/City-Palace-Jaipur.avif" alt="City Palace">
+      <div class="card-content">
+        <div class="tags">Jaipur ♦ Heritage ♦ Royals</div>
+        <h3>City Palace</h3>
+        <div class="line"></div>
+        <p>A blend of Mughal and Rajput architecture, the City Palace showcases royal grandeur and heritage museums.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+    <!-- Jodhpur Places -->
+    <div class="card">
+      <img src="Images/Mehrangarh-Fort.avif" alt="Mehrangarh Fort">
+      <div class="card-content">
+        <div class="tags">Jodhpur ♦ Fort ♦ History</div>
+        <h3>Mehrangarh Fort</h3>
+        <div class="line"></div>
+        <p>One of India’s largest forts, Mehrangarh offers breathtaking views of the Blue City of Jodhpur.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Images/jaswanth-thada.jpg" alt="Jaswant Thada">
+      <div class="card-content">
+        <div class="tags">Jodhpur ♦ Monument ♦ Royals</div>
+        <h3>Jaswant Thada</h3>
+        <div class="line"></div>
+        <p>This beautiful marble cenotaph is often called the "Taj Mahal of Marwar," built in memory of Maharaja Jaswant Singh II.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Images/Umaid-Bhavan.webp" alt="Umaid Bhawan Palace">
+      <div class="card-content">
+        <div class="tags">Jodhpur ♦ Palace ♦ Luxury</div>
+        <h3>Umaid Bhawan Palace</h3>
+        <div class="line"></div>
+        <p>One of the world’s largest private residences, Umaid Bhawan Palace is a symbol of luxury and heritage.</p>
+        <a href="#" class="btn">READ MORE »</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Explore <strong>Jaipur-Jodhpur</strong> Blog | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

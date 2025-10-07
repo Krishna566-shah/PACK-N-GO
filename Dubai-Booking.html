@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Dubai</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+    }
+  
+    header {
+        background: rgba(0,0,0,0.4);
+        position: fixed;
+        width: 100%;
+        padding: 15px 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index:10;
+    }
+    header h1 {
+        color: rgb(255, 223, 153);
+        font-size: 50px;
+    }
+    nav a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    /* Hero Section */
+    .hero {
+        background: url('Images/Dubai.avif') no-repeat center center/cover;
+        background-size:cover;
+        height: 80vh;
+        width:2150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+    .hero-content {
+        background: rgba(255,255,255,0.9);
+        color: black;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 800px;
+        width: 90%;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .hero-content h2 {
+        color: #b8860b;
+        margin-bottom: 10px;
+    }
+    .booking-bar {
+        display: flex;
+        flex-wrap: wrap;
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        margin-top: 20px;
+    }
+    .booking-bar div {
+        flex: 1;
+        min-width: 150px;
+        margin: 5px;
+    }
+    .booking-bar input, .booking-bar select {
+        width: 160px;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    .booking-bar button {
+        background: #b8860b;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    /* Why Choose Us */
+    .why-choose {
+        padding: 50px;
+        text-align: center;
+    }
+    .why-choose h2 {
+        margin-bottom: 30px;
+    }
+    .features {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .feature {
+        max-width: 250px;
+        text-align: center;
+    }
+    .feature img {
+        width: 120px;
+        height:80px;
+        margin-bottom: 10px;
+    }
+    /* Featured News */
+    .featured-news {
+        padding: 50px;
+        background: #f8f8f8;
+    }
+    .news-cards {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .news-card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 300px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .news-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+    .news-card .content {
+        padding: 15px;
+    }
+    /* Testimonials */
+    .testimonials {
+        padding: 50px;
+        background: #fff3e0;
+        text-align: center;
+    }
+    .testimonial-cards {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .testimonial {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 250px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .testimonial img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    /* Footer */
+    footer {
+        background: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>DUBAI</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Destination</a>
+        <a href="Dubai-Blogs.html">Blog</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>"Dubai – Where Luxury Meets the Desert Sky." 🌆</h2>
+        <p>Discover the wonders of Dubai with our exclusive packages</p>
+        <div class="booking-bar">
+            <div><select>
+                <option>PACKAGES</option>
+                <option>Dubai City Tour</option>
+                <option>Luxury Desert Safari</option>
+                <option>Dubai Shopping Festival</option>
+                <option>Budget Dubai</option>
+            </select></div>
+            <div><input type="date"></div>
+            <div><input type="date"></div>
+            <div><input type="number" placeholder="Guests"></div>
+            <div><button>BOOK</button></div>
+        </div>
+    </div>
+</section>
+
+<section class="why-choose">
+    <h2>WHY CHOOSE US?</h2>
+    <div class="features">
+        <div class="feature">
+            <img src="Images/Dubai-Offer.jpeg" alt="Best Deals" >
+            <h3>Exclusive Offers</h3>
+            <p>Get premium Dubai experiences at unbeatable prices.</p>
+        </div>
+        <div class="feature">
+            <img src="Images/Secure-Booking.png" alt="Secure Booking">
+            <h3>Secure Booking</h3>
+            <p>Book your Dubai trip with safety and convenience.</p>
+        </div>
+        <div class="feature">
+            <img src="Images/Dubai-Experience.webp" alt="Experience">
+            <h3>Memorable Journeys</h3>
+            <p>From skyscrapers to sand dunes, we make it magical.</p>
+        </div>
+    </div>
+</section>
+
+<section class="featured-news">
+    <h2 style="text-align:center;">Feature News</h2>
+    <div class="news-cards">
+        <div class="news-card">
+            <img src="Images/BURJ-EX.webp" alt="">
+            <div class="content">
+                <h4>Burj Khalifa Experience</h4>
+                <p>Witness Dubai from the tallest building in the world.</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="Images/Dubai-Beach.jpeg" alt="">
+            <div class="content">
+                <h4>Dubai's Stunning Beaches</h4>
+                <p>Relax along the pristine coastlines of the UAE.</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="Images/Dubai-Mall.webp" alt="">
+            <div class="content">
+                <h4>Shopping Paradise</h4>
+                <p>Explore the world’s largest malls and luxury brands.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial-cards">
+        <div class="testimonial">
+            <img src="Images/DU-1.webp" alt="Sarah">
+            <p>"Dubai was a dream come true! Everything was perfect."</p>
+            <strong>- Sarah</strong>
+        </div>
+        <div class="testimonial">
+            <img src="Images/DU-2.avif" alt="Michael">
+            <p>"Loved the luxury hotels and desert safari."</p>
+            <strong>- Michael</strong>
+        </div>
+        <div class="testimonial">
+            <img src="Images/DU-3.jpg" alt="Priya">
+            <p>"The city, the culture, the shopping – amazing!"</p>
+            <strong>- Priya</strong>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Explore Dubai. All Rights Reserved.
+</footer>
+
+</body>
+</html>

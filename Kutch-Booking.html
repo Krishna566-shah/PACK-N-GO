@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Kutch</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+    }
+    header {
+        background: rgba(0,0,0,0.4);
+        position: fixed;
+        width: 100%;
+        padding: 15px 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index:10;
+    }
+    header h1 {
+        color: #d2691e;
+        font-size: 50px;
+    }
+    nav a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    .hero {
+        background: url('Images/kUTCH-Hero.jpg') no-repeat center center/cover;
+        height: 80vh;
+        width: 2150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+    .hero-content {
+        background: rgba(255,255,255,0.9);
+        color: black;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 800px;
+        width: 90%;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .hero-content h2 {
+        color: #d2691e;
+        margin-bottom: 10px;
+    }
+    .booking-bar {
+        display: flex;
+        flex-wrap: wrap;
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        margin-top: 20px;
+    }
+    .booking-bar div {
+        flex: 1;
+        min-width: 150px;
+        margin: 5px;
+    }
+    .booking-bar input, .booking-bar select {
+        width: 160px;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    .booking-bar button {
+        background: #d2691e;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .why-choose {
+        padding: 50px;
+        text-align: center;
+    }
+    .features {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .feature {
+        max-width: 250px;
+        text-align: center;
+    }
+    .feature img {
+        width: 120px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+    .featured-news {
+        padding: 50px;
+        background: #f8f8f8;
+    }
+    .news-cards {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .news-card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 300px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .news-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+    .news-card .content {
+        padding: 15px;
+    }
+    .testimonials {
+        padding: 50px;
+        background: #fff5e6;
+        text-align: center;
+    }
+    .testimonial-cards {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .testimonial {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 250px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .testimonial img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    footer {
+        background: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>KUTCH</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Destination</a>
+        <a href="Kutch-Blogs.html">Blog</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>"Kutch – Where the White Desert Meets the Sky" 🏜️✨</h2>
+        <p>From the endless salt flats to vibrant handicrafts, Kutch is a land of colors and contrasts.</p>
+        <div class="booking-bar">
+            <div><select>
+                <option>PACKAGES</option>
+                <option>Rann of Kutch Festival Tour</option>
+                <option>Mandvi Beach Retreat</option>
+                <option>Bhuj Heritage Walk</option>
+                <option>Kala Dungar & Wildlife Safari</option>
+            </select></div>
+            <div><input type="date"></div>
+            <div><input type="date"></div>
+            <div><input type="number" placeholder="Guests"></div>
+            <div><button>BOOK</button></div>
+        </div>
+    </div>
+</section>
+
+<section class="why-choose">
+    <h2>WHY CHOOSE US?</h2>
+    <div class="features">
+        <div class="feature">
+            <img src="Images/Kutch-Rann.jpeg" alt="Desert Experience">
+            <h3>Unique Landscapes</h3>
+            <p>Witness the surreal beauty of the White Rann under moonlight.</p>
+        </div>
+        <div class="feature">
+            <img src="Images/Secure-Booking.png" alt="Secure Booking">
+            <h3>Secure Booking</h3>
+            <p>Plan your desert adventures with confidence and ease.</p>
+        </div>
+        <div class="feature">
+            <img src="Images/Kutch-Experience.jpeg" alt="Experience">
+            <h3>Cultural Richness</h3>
+            <p>Explore traditional embroidery, crafts, and folk performances.</p>
+        </div>
+    </div>
+</section>
+
+<section class="featured-news">
+    <h2 style="text-align:center;">Feature News</h2>
+    <div class="news-cards">
+        <div class="news-card">
+            <img src="Images/Rann-Kutch.avif" alt="Rann-Kutch">
+            <div class="content">
+                <h4>Rann of Kutch</h4>
+                <p>Experience the vast salt desert during the magical Rann Utsav.</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="Images/Mandvi-Beach.avif" alt="Mandvi Beach">
+            <div class="content">
+                <h4>Mandvi Beach</h4>
+                <p>Relax by the Arabian Sea and visit Vijay Vilas Palace.</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="Images/Bhuj.jpg" alt="Bhuj">
+            <div class="content">
+                <h4>Bhuj</h4>
+                <p>Discover centuries-old palaces, museums, and markets.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial-cards">
+        <div class="testimonial">
+            <img src="Images/KT1.jpeg" alt="Priya">
+            <p>"The full moon night at the Rann was breathtaking."</p>
+            <strong>- Priya</strong>
+        </div>
+        <div class="testimonial">
+            <img src="Images/KT2.jpeg" alt="Rohit">
+            <p>"Loved exploring the colorful handicraft villages."</p>
+            <strong>- Rohit</strong>
+        </div>
+        <div class="testimonial">
+            <img src="Images/KT3.jpg" alt="Sarah">
+            <p>"Mandvi Beach is peaceful and so clean."</p>
+            <strong>- Sarah</strong>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Explore Kutch. All Rights Reserved.
+</footer>
+
+</body>
+</html>
